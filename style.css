@@ -1,0 +1,508 @@
+body {
+	background-color: #f1f1f1;
+	scroll-behavior: smooth;
+	margin: 0;
+}
+test
+#imgMobile {
+	display: none;
+}
+#mapid {
+	height: 600px;
+    width: 60%;   
+    box-shadow: 5px 5px 10px 0 #c0c0c0; 
+}
+#reservedBike{
+	display: none;
+}
+#mapinfo {
+	position: relative;
+	height: 575px;
+	width: 450px;
+	background-color: #f1f1f1;
+	display: none;
+	border:2px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	margin-left: 3%;
+	text-align: center;
+	box-shadow: 5px 5px 10px 0 #c0c0c0;
+}
+#bouton #valider,#bouton #annuler{
+	display: none;
+}
+#mapinfo h3 {
+	position: relative;
+	bottom: 47px;
+	background-color: #f1f1f1;
+	width: 50%;
+	padding:5px;
+	display: inline-block;
+
+}
+#mapinfo #name {
+	
+	top: -10%;
+	position: relative;
+	font-size: 14px;
+	height: 10%;
+}
+#mapinfo #address {
+	
+	top: -3%;
+	position: relative;
+	height: 10%;
+	
+}
+#mapinfo #name #stationName {
+	font-size: 30px;
+}
+#mapinfo #stationBike {
+	font-size: 30px;
+}
+#mapinfo #address #stationAdress {
+	font-size: 26px;
+}
+#mapSection {
+	display: flex;
+	margin:0 10% 0px 10%;
+	position: relative;
+	top: -135px;
+	margin-top: 50px;
+}
+#mapinfo #error {
+	position: relative;
+	top: -10%;
+	font-weight: bold;
+	color: red;
+	font-size: 20px;
+}
+p#bouton {
+	text-align: center;
+	position: relative;
+	bottom: -10%;	
+}
+#effacer {	
+	background-color: red;
+}
+#annuler {
+	background-color: orange;
+}
+#reservation {
+	height: 250px;
+	width: 100%;
+	background-color:#99ce03;
+	text-align: center;
+	margin-top: -60px;
+}
+#reservation h3 {
+	font-size: 30px;
+	padding-top: 10px;
+}
+#chrono {
+	height: 30px;
+}
+h2,#chrono {
+	margin:0 10% 0px 10%;
+	width: auto;	
+}
+#status {
+	border-radius: 8px;
+	display: inline-block;
+	padding: 2px 10px;
+}
+label {
+	width: 25%;
+	display: inline-block;
+	margin: 10px 0;
+}
+button {
+	text-align: center;
+	background-color: #99ce03;
+	border-radius: 5px;
+	border:0px;
+	padding: 10px 37px;		
+	box-shadow: 5px 5px 10px 0 #c0c0c0;
+	margin: auto;
+}
+input {
+	border:1px solid #99ce03;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+/* nav */
+.logo {
+	width:8%;
+	margin-bottom: 20px;
+	padding-top: 10px;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+nav ul li a {
+	padding:0 15px;
+	text-decoration: none;
+	color:#99ce03;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 24px;
+}
+nav ul li a:hover {
+	color: green;
+	border-top: 2px solid green;
+}
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: auto;
+    top: 0px;
+    border-bottom:1px solid #99ce03;
+}
+#signature {	
+    border:solid 2px black;
+    cursor:crosshair;
+    display: none;
+    margin: auto;
+}
+#reservedBike {
+	position: relative;
+	top: 20%;
+	font-size: 35px;
+}
+#alreadyReserved {
+	font-size: 30px;
+	position: relative;
+	top: 14%;
+	color: #096022;
+}
+span {
+	color: #096022;
+}
+.stationReserved,.stationChrono {
+	font-size: 30px;
+}
+/*Mobile Menu*/
+#mobileMenu, .fas.fa-align-justify {
+	display: none;
+}
+/*sliders*/
+#iconSliders {
+	text-align: center;
+	position: relative;
+	top: -150px;
+}
+#iconSliders .fas:hover {
+	color: grey;
+	cursor: pointer;
+}
+
+#slid {
+	height: 800px;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	perspective: 4000px;	
+}
+#iconSliders .fa-play {
+	display: none;
+}
+#chrono p {
+	color: #096022;
+	font-size: 30px;
+}
+#sliders  {
+	height: 100%;
+	width: 100%;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+	position: absolute;
+	
+}
+#sliders img{
+	position: absolute;
+	display: block;
+	width: 47%;
+	
+	border-radius: 10px;
+	margin: auto;
+	top: 12%;
+	left: 20%;
+	box-shadow: 5px 5px 10px 0 #c0c0c0;
+}
+#sliders #sliders1 {
+	transform: rotateY(0deg) translateZ(840px);
+	backface-visibility: hidden;
+	
+}
+#sliders #sliders2 {
+	transform: rotateY(72deg) translateZ(840px);
+	backface-visibility: hidden;
+}
+#sliders #sliders3 {
+	transform: rotateY(144deg) translateZ(840px);
+	backface-visibility: hidden;
+}
+#sliders #sliders4 {
+	transform: rotateY(216deg) translateZ(840px);
+	backface-visibility: hidden;
+
+}
+#sliders #sliders5 {
+	transform: rotateY(288deg) translateZ(840px);
+	backface-visibility: hidden;
+}
+
+/* RESPONSIVE */
+@media all and (max-width: 1980px) {
+	#sliders img{
+		width: 57%;
+	}
+	#sliders #sliders1 {
+		transform: rotateY(0deg) translateZ(790px);
+			
+	}
+	#sliders #sliders2 {
+		transform: rotateY(72deg) translateZ(790px);
+	}
+	#sliders #sliders3 {
+		transform: rotateY(144deg) translateZ(790px);
+	}
+	#sliders #sliders4 {
+		transform: rotateY(216deg) translateZ(790px);
+	}
+	#sliders #sliders5 {
+		transform: rotateY(288deg) translateZ(790px);
+	}
+}
+@media all and (max-width: 1800px) {
+	#sliders img{
+		width: 60%;
+	}
+	#sliders #sliders1 {
+		transform: rotateY(0deg) translateZ(755px);
+	}
+	#sliders #sliders2 {
+		transform: rotateY(72deg) translateZ(755px);
+	}
+	#sliders #sliders3 {
+		transform: rotateY(144deg) translateZ(755px);
+	}
+	#sliders #sliders4 {
+		transform: rotateY(216deg) translateZ(755px);
+	}
+	#sliders #sliders5 {
+		transform: rotateY(288deg) translateZ(755px);
+	}
+}
+@media all and (max-width: 1600px) {	
+	#sliders #sliders1 {
+		transform: rotateY(0deg) translateZ(680px);
+	}
+	#sliders #sliders2 {
+		transform: rotateY(72deg) translateZ(680px);
+	}
+	#sliders #sliders3 {
+		transform: rotateY(144deg) translateZ(680px);
+	}
+	#sliders #sliders4 {
+		transform: rotateY(216deg) translateZ(680px);
+	}
+	#sliders #sliders5 {
+		transform: rotateY(288deg) translateZ(680px);
+	}
+	#slid {
+		height: 700px;
+	}
+}
+@media all and (max-width: 1440px) {
+	#sliders #sliders1 {
+		transform: rotateY(0deg) translateZ(595px);
+		
+	}
+	#sliders #sliders2 {
+		transform: rotateY(72deg) translateZ(595px);
+	}
+	#sliders #sliders3 {
+		transform: rotateY(144deg) translateZ(595px);
+	}
+	#sliders #sliders4 {
+		transform: rotateY(216deg) translateZ(595px);
+	}
+	#sliders #sliders5 {
+		transform: rotateY(288deg) translateZ(595px);
+	}
+	#slid {
+		height: 650px;
+	}
+}
+@media all and (max-width: 1200px) {
+	#sliders #sliders1 {
+		transform: rotateY(0deg) translateZ(500px);
+		backface-visibility: hidden;
+			
+	}
+	#sliders #sliders2 {
+		transform: rotateY(72deg) translateZ(500px);
+		backface-visibility: hidden;
+	}
+	#sliders #sliders3 {
+		transform: rotateY(144deg) translateZ(500px);
+		backface-visibility: hidden;
+	}
+	#sliders #sliders4 {
+		transform: rotateY(216deg) translateZ(500px);
+		backface-visibility: hidden;
+
+	}
+	#sliders #sliders5 {
+		transform: rotateY(288deg) translateZ(500px);
+		backface-visibility: hidden;
+	}
+	#mapSection {
+		margin: 0;
+	}
+	#slid {
+		height: 600px;
+	}
+}
+@media all and (max-width: 1024px) {
+	.logo{
+		width: 10%;
+	}
+	#sliders img {
+		width: 80%;
+		left:10%;
+	}
+	#sliders #sliders1 {
+		transform: rotateY(0deg) translateZ(570px);
+		backface-visibility: hidden;
+			
+	}
+	#sliders #sliders2 {
+		transform: rotateY(72deg) translateZ(570px);
+		backface-visibility: hidden;
+	}
+	#sliders #sliders3 {
+		transform: rotateY(144deg) translateZ(570px);
+		backface-visibility: hidden;
+	}
+	#sliders #sliders4 {
+		transform: rotateY(216deg) translateZ(570px);
+		backface-visibility: hidden;
+
+	}
+	#sliders #sliders5 {
+		transform: rotateY(288deg) translateZ(570px);
+		backface-visibility: hidden;
+	}
+	#mapSection {
+		margin: 0;
+	}
+}
+@media all and (max-width: 980px) {
+	.logo{
+		width: 12%;
+	}
+}
+@media all and (max-width: 900px) {
+	#slid {
+		height: 550px;
+	}
+}
+@media all and (max-width: 850px) {
+	.logo{
+		width: 14%;
+	}
+}
+@media all and (max-width:800px) {
+	#mapSection {
+		flex-direction: column;
+	}
+	#mapid {
+		margin: 0 5%;
+		width: 90%;
+		height: 400px;
+	}
+	#mapinfo {
+		margin: 50px auto 0 auto;
+	}
+	#slid {
+		height: 500px;
+	}
+}
+@media all and (max-width:600px) {
+	#slid {
+		height: 425px;
+	}
+	.desktopMenu {
+		display: none;
+	}
+	.fas.fa-align-justify{
+		display: inline-block;
+	
+	}
+
+	nav li:last-child:hover #mobileMenu {
+		display: flex;
+		position: absolute;
+		flex-direction: column;
+		left: 10%;
+		background-color: rgba(15,15,15,0.5);
+		border-radius: 6px;
+		width: 80%;
+		color: white;	
+	}
+	#mobileMenu:hover a:hover{
+		border: 0px;
+		color: #99ce03;
+	}
+	#mobileMenu a {
+		color: white;
+		margin: auto;
+		padding:10px 0;
+		width: 100%;
+		text-align: center;
+	}
+}
+@media all and (max-width:600px) {
+	#mapinfo {
+		width: 90%;		
+	}
+	#signature {
+		width: 100%;
+	}
+	#slid,#iconSliders {
+		display: none;
+	}
+	#imgMobile {
+		display: block;	
+		width: 100%;	
+	}
+	#mapSection{
+		position: initial;
+		margin-top: 50px;
+	}
+	#reservation {
+		margin: 0;
+	}
+	#signature {
+		height: 220px;
+	}
+	p#bouton {
+		bottom: 0%;
+	}
+	#mapinfo #error{
+		top: 0%;
+	}
+}
+@media all and (max-width:350px) {
+	button {
+	padding: 10px 20px;
+	}	
+}
